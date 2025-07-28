@@ -1,0 +1,231 @@
+0000000000001341 <merge>:
+    1341:	55                   	push   %rbp
+    1342:	48 89 e5             	mov    %rsp,%rbp
+    1345:	48 83 ec 60          	sub    $0x60,%rsp
+    1349:	ff 15 99 2c 00 00    	call   *0x2c99(%rip)        # 3fe8 <mcount@GLIBC_2.2.5>
+    134f:	48 89 7d b8          	mov    %rdi,-0x48(%rbp)
+    1353:	89 75 b4             	mov    %esi,-0x4c(%rbp)
+    1356:	89 55 b0             	mov    %edx,-0x50(%rbp)
+    1359:	89 4d ac             	mov    %ecx,-0x54(%rbp)
+    135c:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    1363:	00 00 
+    1365:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    1369:	31 c0                	xor    %eax,%eax
+    136b:	48 89 e0             	mov    %rsp,%rax
+    136e:	48 89 c6             	mov    %rax,%rsi
+    1371:	8b 45 b0             	mov    -0x50(%rbp),%eax
+    1374:	2b 45 b4             	sub    -0x4c(%rbp),%eax
+    1377:	83 c0 01             	add    $0x1,%eax
+    137a:	89 45 d0             	mov    %eax,-0x30(%rbp)
+    137d:	8b 45 ac             	mov    -0x54(%rbp),%eax
+    1380:	2b 45 b0             	sub    -0x50(%rbp),%eax
+    1383:	89 45 d4             	mov    %eax,-0x2c(%rbp)
+    1386:	8b 45 d0             	mov    -0x30(%rbp),%eax
+    1389:	48 63 d0             	movslq %eax,%rdx
+    138c:	48 83 ea 01          	sub    $0x1,%rdx
+    1390:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+    1394:	48 98                	cltq
+    1396:	48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx
+    139d:	00 
+    139e:	b8 10 00 00 00       	mov    $0x10,%eax
+    13a3:	48 83 e8 01          	sub    $0x1,%rax
+    13a7:	48 01 d0             	add    %rdx,%rax
+    13aa:	bf 10 00 00 00       	mov    $0x10,%edi
+    13af:	ba 00 00 00 00       	mov    $0x0,%edx
+    13b4:	48 f7 f7             	div    %rdi
+    13b7:	48 6b c0 10          	imul   $0x10,%rax,%rax
+    13bb:	48 89 c1             	mov    %rax,%rcx
+    13be:	48 81 e1 00 f0 ff ff 	and    $0xfffffffffffff000,%rcx
+    13c5:	48 89 e2             	mov    %rsp,%rdx
+    13c8:	48 29 ca             	sub    %rcx,%rdx
+    13cb:	48 39 d4             	cmp    %rdx,%rsp
+    13ce:	74 12                	je     13e2 <merge+0xa1>
+    13d0:	48 81 ec 00 10 00 00 	sub    $0x1000,%rsp
+    13d7:	48 83 8c 24 f8 0f 00 	orq    $0x0,0xff8(%rsp)
+    13de:	00 00 
+    13e0:	eb e9                	jmp    13cb <merge+0x8a>
+    13e2:	48 89 c2             	mov    %rax,%rdx
+    13e5:	81 e2 ff 0f 00 00    	and    $0xfff,%edx
+    13eb:	48 29 d4             	sub    %rdx,%rsp
+    13ee:	48 89 c2             	mov    %rax,%rdx
+    13f1:	81 e2 ff 0f 00 00    	and    $0xfff,%edx
+    13f7:	48 85 d2             	test   %rdx,%rdx
+    13fa:	74 10                	je     140c <merge+0xcb>
+    13fc:	25 ff 0f 00 00       	and    $0xfff,%eax
+    1401:	48 83 e8 08          	sub    $0x8,%rax
+    1405:	48 01 e0             	add    %rsp,%rax
+    1408:	48 83 08 00          	orq    $0x0,(%rax)
+    140c:	48 89 e0             	mov    %rsp,%rax
+    140f:	48 83 c0 03          	add    $0x3,%rax
+    1413:	48 c1 e8 02          	shr    $0x2,%rax
+    1417:	48 c1 e0 02          	shl    $0x2,%rax
+    141b:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+    141f:	8b 45 d4             	mov    -0x2c(%rbp),%eax
+    1422:	48 63 d0             	movslq %eax,%rdx
+    1425:	48 83 ea 01          	sub    $0x1,%rdx
+    1429:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+    142d:	48 98                	cltq
+    142f:	48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx
+    1436:	00 
+    1437:	b8 10 00 00 00       	mov    $0x10,%eax
+    143c:	48 83 e8 01          	sub    $0x1,%rax
+    1440:	48 01 d0             	add    %rdx,%rax
+    1443:	bf 10 00 00 00       	mov    $0x10,%edi
+    1448:	ba 00 00 00 00       	mov    $0x0,%edx
+    144d:	48 f7 f7             	div    %rdi
+    1450:	48 6b c0 10          	imul   $0x10,%rax,%rax
+    1454:	48 89 c1             	mov    %rax,%rcx
+    1457:	48 81 e1 00 f0 ff ff 	and    $0xfffffffffffff000,%rcx
+    145e:	48 89 e2             	mov    %rsp,%rdx
+    1461:	48 29 ca             	sub    %rcx,%rdx
+    1464:	48 39 d4             	cmp    %rdx,%rsp
+    1467:	74 12                	je     147b <merge+0x13a>
+    1469:	48 81 ec 00 10 00 00 	sub    $0x1000,%rsp
+    1470:	48 83 8c 24 f8 0f 00 	orq    $0x0,0xff8(%rsp)
+    1477:	00 00 
+    1479:	eb e9                	jmp    1464 <merge+0x123>
+    147b:	48 89 c2             	mov    %rax,%rdx
+    147e:	81 e2 ff 0f 00 00    	and    $0xfff,%edx
+    1484:	48 29 d4             	sub    %rdx,%rsp
+    1487:	48 89 c2             	mov    %rax,%rdx
+    148a:	81 e2 ff 0f 00 00    	and    $0xfff,%edx
+    1490:	48 85 d2             	test   %rdx,%rdx
+    1493:	74 10                	je     14a5 <merge+0x164>
+    1495:	25 ff 0f 00 00       	and    $0xfff,%eax
+    149a:	48 83 e8 08          	sub    $0x8,%rax
+    149e:	48 01 e0             	add    %rsp,%rax
+    14a1:	48 83 08 00          	orq    $0x0,(%rax)
+    14a5:	48 89 e0             	mov    %rsp,%rax
+    14a8:	48 83 c0 03          	add    $0x3,%rax
+    14ac:	48 c1 e8 02          	shr    $0x2,%rax
+    14b0:	48 c1 e0 02          	shl    $0x2,%rax
+    14b4:	48 89 45 f0          	mov    %rax,-0x10(%rbp)
+    14b8:	c7 45 c4 00 00 00 00 	movl   $0x0,-0x3c(%rbp)
+    14bf:	eb 2c                	jmp    14ed <merge+0x1ac>
+    14c1:	8b 55 b4             	mov    -0x4c(%rbp),%edx      -------------- 1b8 --------------
+    14c4:	8b 45 c4             	mov    -0x3c(%rbp),%eax
+    14c7:	01 d0                	add    %edx,%eax
+    14c9:	48 98                	cltq
+    14cb:	48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx
+    14d2:	00 
+    14d3:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    14d7:	48 01 d0             	add    %rdx,%rax
+    14da:	8b 08                	mov    (%rax),%ecx
+    14dc:	48 8b 45 e0          	mov    -0x20(%rbp),%rax      5% *
+    14e0:	8b 55 c4             	mov    -0x3c(%rbp),%edx
+    14e3:	48 63 d2             	movslq %edx,%rdx
+    14e6:	89 0c 90             	mov    %ecx,(%rax,%rdx,4)
+    14e9:	83 45 c4 01          	addl   $0x1,-0x3c(%rbp)
+    14ed:	8b 45 c4             	mov    -0x3c(%rbp),%eax
+    14f0:	3b 45 d0             	cmp    -0x30(%rbp),%eax
+    14f3:	7c cc                	jl     14c1 <merge+0x180>
+    14f5:	c7 45 c8 00 00 00 00 	movl   $0x0,-0x38(%rbp)      -------------- 1e4 --------------
+    14fc:	eb 2f                	jmp    152d <merge+0x1ec>
+    14fe:	8b 45 b0             	mov    -0x50(%rbp),%eax
+    1501:	8d 50 01             	lea    0x1(%rax),%edx        -------------- 1f5 --------------
+    1504:	8b 45 c8             	mov    -0x38(%rbp),%eax
+    1507:	01 d0                	add    %edx,%eax
+    1509:	48 98                	cltq
+    150b:	48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx
+    1512:	00 
+    1513:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    1517:	48 01 d0             	add    %rdx,%rax
+    151a:	8b 08                	mov    (%rax),%ecx
+    151c:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1520:	8b 55 c8             	mov    -0x38(%rbp),%edx
+    1523:	48 63 d2             	movslq %edx,%rdx
+    1526:	89 0c 90             	mov    %ecx,(%rax,%rdx,4)
+    1529:	83 45 c8 01          	addl   $0x1,-0x38(%rbp)
+    152d:	8b 45 c8             	mov    -0x38(%rbp),%eax      --------------- 224 ---------------
+    1530:	3b 45 d4             	cmp    -0x2c(%rbp),%eax
+    1533:	7c c9                	jl     14fe <merge+0x1bd>
+    1535:	c7 45 c4 00 00 00 00 	movl   $0x0,-0x3c(%rbp)
+    153c:	c7 45 c8 00 00 00 00 	movl   $0x0,-0x38(%rbp)
+    1543:	8b 45 b4             	mov    -0x4c(%rbp),%eax
+    1546:	89 45 cc             	mov    %eax,-0x34(%rbp)
+    1549:	eb 74                	jmp    15bf <merge+0x27e>
+    154b:	48 8b 45 e0          	mov    -0x20(%rbp),%rax      --------------- 242 ---------------
+    154f:	8b 55 c4             	mov    -0x3c(%rbp),%edx
+    1552:	48 63 d2             	movslq %edx,%rdx
+    1555:	8b 0c 90             	mov    (%rax,%rdx,4),%ecx
+    1558:	48 8b 45 f0          	mov    -0x10(%rbp),%rax      6% *
+    155c:	8b 55 c8             	mov    -0x38(%rbp),%edx
+    155f:	48 63 d2             	movslq %edx,%rdx
+    1562:	8b 04 90             	mov    (%rax,%rdx,4),%eax
+    1565:	39 c1                	cmp    %eax,%ecx             5% *
+    1567:	7f 2a                	jg     1593 <merge+0x252>
+    1569:	8b 45 cc             	mov    -0x34(%rbp),%eax      8% *
+    156c:	48 98                	cltq                         7% *
+    156e:	48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx
+    1575:	00 
+    1576:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    157a:	48 8d 0c 02          	lea    (%rdx,%rax,1),%rcx
+    157e:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    1582:	8b 55 c4             	mov    -0x3c(%rbp),%edx
+    1585:	48 63 d2             	movslq %edx,%rdx
+    1588:	8b 04 90             	mov    (%rax,%rdx,4),%eax
+    158b:	89 01                	mov    %eax,(%rcx)
+    158d:	83 45 c4 01          	addl   $0x1,-0x3c(%rbp)
+    1591:	eb 28                	jmp    15bb <merge+0x27a>
+    1593:	8b 45 cc             	mov    -0x34(%rbp),%eax      8% *
+    1596:	48 98                	cltq                         7% *
+    1598:	48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx 
+    159f:	00 
+    15a0:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    15a4:	48 8d 0c 02          	lea    (%rdx,%rax,1),%rcx
+    15a8:	48 8b 45 f0          	mov    -0x10(%rbp),%rax  
+    15ac:	8b 55 c8             	mov    -0x38(%rbp),%edx
+    15af:	48 63 d2             	movslq %edx,%rdx
+    15b2:	8b 04 90             	mov    (%rax,%rdx,4),%eax
+    15b5:	89 01                	mov    %eax,(%rcx)
+    15b7:	83 45 c8 01          	addl   $0x1,-0x38(%rbp)
+    15bb:	83 45 cc 01          	addl   $0x1,-0x34(%rbp)
+    15bf:	8b 45 c4             	mov    -0x3c(%rbp),%eax
+    15c2:	3b 45 d0             	cmp    -0x30(%rbp),%eax
+    15c5:	7d 3a                	jge    1601 <merge+0x2c0>
+    15c7:	8b 45 c8             	mov    -0x38(%rbp),%eax
+    15ca:	3b 45 d4             	cmp    -0x2c(%rbp),%eax
+    15cd:	0f 8c 78 ff ff ff    	jl     154b <merge+0x20a>
+    15d3:	eb 2c                	jmp    1601 <merge+0x2c0>
+    15d5:	8b 45 cc             	mov    -0x34(%rbp),%eax
+    15d8:	48 98                	cltq
+    15da:	48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx 
+    15e1:	00 
+    15e2:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    15e6:	48 8d 0c 02          	lea    (%rdx,%rax,1),%rcx
+    15ea:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    15ee:	8b 55 c4             	mov    -0x3c(%rbp),%edx
+    15f1:	48 63 d2             	movslq %edx,%rdx
+    15f4:	8b 04 90             	mov    (%rax,%rdx,4),%eax
+    15f7:	89 01                	mov    %eax,(%rcx)
+    15f9:	83 45 c4 01          	addl   $0x1,-0x3c(%rbp)
+    15fd:	83 45 cc 01          	addl   $0x1,-0x34(%rbp)
+    1601:	8b 45 c4             	mov    -0x3c(%rbp),%eax
+    1604:	3b 45 d0             	cmp    -0x30(%rbp),%eax
+    1607:	7c cc                	jl     15d5 <merge+0x294>
+    1609:	eb 2c                	jmp    1637 <merge+0x2f6>
+    160b:	8b 45 cc             	mov    -0x34(%rbp),%eax
+    160e:	48 98                	cltq
+    1610:	48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx
+    1617:	00 
+    1618:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+    161c:	48 8d 0c 02          	lea    (%rdx,%rax,1),%rcx
+    1620:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+    1624:	8b 55 c8             	mov    -0x38(%rbp),%edx
+    1627:	48 63 d2             	movslq %edx,%rdx
+    162a:	8b 04 90             	mov    (%rax,%rdx,4),%eax
+    162d:	89 01                	mov    %eax,(%rcx)
+    162f:	83 45 c8 01          	addl   $0x1,-0x38(%rbp)
+    1633:	83 45 cc 01          	addl   $0x1,-0x34(%rbp)
+    1637:	8b 45 c8             	mov    -0x38(%rbp),%eax
+    163a:	3b 45 d4             	cmp    -0x2c(%rbp),%eax
+    163d:	7c cc                	jl     160b <merge+0x2ca>
+    163f:	48 89 f4             	mov    %rsi,%rsp
+    1642:	90                   	nop
+    1643:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+    1647:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    164e:	00 00 
+    1650:	74 05                	je     1657 <merge+0x316>
+    1652:	e8 89 fa ff ff       	call   10e0 <__stack_chk_fail@plt>
+    1657:	c9                   	leave
+    1658:	c3                   	ret

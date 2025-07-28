@@ -1,0 +1,308 @@
+236 (2)
+
+ Performance counter stats for './bin/main_sort_bench 1000 q 44' (30 runs):
+
+              2.75 msec task-clock                #    0.179 CPUs utilized            ( +-  0.98% )
+                 3      context-switches          #    0.934 K/sec                    ( +- 10.00% )
+                 0      cpu-migrations            #    0.000 K/sec                  
+                46      page-faults               #    0.017 M/sec                    ( +-  0.69% )
+           5083115      cycles                    #    1.849 GHz                      ( +-  0.99% )
+           2345894      instructions              #    0.46  insn per cycle           ( +-  0.85% )
+            204457      branches                  #   74.379 M/sec                    ( +-  3.75% )
+             20590      branch-misses             #   10.07% of all branches          ( +-  1.04% )
+
+           0.01537 +- 0.00164 seconds time elapsed  ( +- 10.67% )
+
+
+ Performance counter stats for './bin/main_sort_bench 100 m 42' (30 runs):
+
+              1.79 msec task-clock                #    0.127 CPUs utilized            ( +-  1.35% )
+                 2      context-switches          #    0.001 M/sec                    ( +- 11.35% )
+                 0      cpu-migrations            #    0.019 K/sec                    ( +-100.00% )
+                46      page-faults               #    0.026 M/sec                    ( +-  0.59% )
+           3303424      cycles                    #    1.849 GHz                      ( +-  1.36% )
+           1134616      instructions              #    0.34  insn per cycle           ( +-  1.85% )
+            135129      branches                  #   75.639 M/sec                    ( +-  6.07% )
+             14459      branch-misses             #   10.70% of all branches          ( +-  1.31% )
+
+           0.01405 +- 0.00151 seconds time elapsed  ( +- 10.73% )
+
+
+ Performance counter stats for './bin/main_sort_bench 500 m 43' (30 runs):
+
+              2.43 msec task-clock                #    0.135 CPUs utilized            ( +-  1.34% )
+                 2      context-switches          #    0.822 K/sec                    ( +-  9.59% )
+                 0      cpu-migrations            #    0.027 K/sec                    ( +- 69.48% )
+                46      page-faults               #    0.019 M/sec                    ( +-  0.59% )
+           4500030      cycles                    #    1.850 GHz                      ( +-  1.36% )
+           1547139      instructions              #    0.34  insn per cycle           ( +-  1.30% )
+            163469      branches                  #   67.202 M/sec                    ( +-  3.40% )
+             17693      branch-misses             #   10.82% of all branches          ( +-  1.06% )
+
+           0.01802 +- 0.00145 seconds time elapsed  ( +-  8.07% )
+
+
+ Performance counter stats for './bin/main_sort_bench 500 q 43' (30 runs):
+
+              2.20 msec task-clock                #    0.131 CPUs utilized            ( +-  0.95% )
+                 2      context-switches          #    0.923 K/sec                    ( +- 11.90% )
+                 0      cpu-migrations            #    0.015 K/sec                    ( +-100.00% )
+                46      page-faults               #    0.021 M/sec                    ( +-  0.57% )
+           4072345      cycles                    #    1.849 GHz                      ( +-  0.96% )
+           1673646      instructions              #    0.41  insn per cycle           ( +-  0.90% )
+            163917      branches                  #   74.435 M/sec                    ( +-  3.15% )
+             16579      branch-misses             #   10.11% of all branches          ( +-  0.92% )
+
+           0.01687 +- 0.00213 seconds time elapsed  ( +- 12.61% )
+
+
+ Performance counter stats for './bin/main_sort_bench 1000 m 44' (30 runs):
+
+              3.34 msec task-clock                #    0.156 CPUs utilized            ( +-  0.62% )
+                 2      context-switches          #    0.599 K/sec                    ( +-  9.28% )
+                 0      cpu-migrations            #    0.020 K/sec                    ( +- 69.48% )
+                47      page-faults               #    0.014 M/sec                    ( +-  0.58% )
+           6168945      cycles                    #    1.849 GHz                      ( +-  0.63% )
+           2088322      instructions              #    0.34  insn per cycle           ( +-  0.74% )
+            201194      branches                  #   60.290 M/sec                    ( +-  2.63% )
+             21839      branch-misses             #   10.85% of all branches          ( +-  0.79% )
+
+           0.02136 +- 0.00191 seconds time elapsed  ( +-  8.93% )
+
+
+ Performance counter stats for './bin/main_sort_bench 100 q 42' (30 runs):
+
+              1.80 msec task-clock                #    0.103 CPUs utilized            ( +-  1.28% )
+                 2      context-switches          #    0.001 M/sec                    ( +- 11.70% )
+                 0      cpu-migrations            #    0.019 K/sec                    ( +-100.00% )
+                46      page-faults               #    0.025 M/sec                    ( +-  0.58% )
+           3328078      cycles                    #    1.850 GHz                      ( +-  1.29% )
+           1175300      instructions              #    0.35  insn per cycle           ( +-  1.89% )
+            133963      branches                  #   74.449 M/sec                    ( +-  5.96% )
+             14552      branch-misses             #   10.86% of all branches          ( +-  1.48% )
+
+           0.01749 +- 0.00157 seconds time elapsed  ( +-  9.00% )
+
+
+ Performance counter stats for './bin/main_sort_bench 5000 q 45' (30 runs):
+
+              7.40 msec task-clock                #    0.182 CPUs utilized            ( +-  0.31% )
+                 3      context-switches          #    0.352 K/sec                    ( +-  5.41% )
+                 0      cpu-migrations            #    0.014 K/sec                    ( +- 55.71% )
+                54      page-faults               #    0.007 M/sec                    ( +-  0.50% )
+          13669348      cycles                    #    1.848 GHz                      ( +-  0.31% )
+           8241925      instructions              #    0.60  insn per cycle           ( +-  0.28% )
+            552923      branches                  #   74.769 M/sec                    ( +-  1.50% )
+             49861      branch-misses             #    9.02% of all branches          ( +-  0.31% )
+
+           0.04054 +- 0.00293 seconds time elapsed  ( +-  7.22% )
+
+
+ Performance counter stats for './bin/main_sort_bench 5000 m 45' (30 runs):
+
+             11.81 msec task-clock                #    0.219 CPUs utilized            ( +-  0.34% )
+                 4      context-switches          #    0.381 K/sec                    ( +-  7.81% )
+                 0      cpu-migrations            #    0.008 K/sec                    ( +- 55.71% )
+                55      page-faults               #    0.005 M/sec                    ( +-  0.51% )
+          21842823      cycles                    #    1.849 GHz                      ( +-  0.34% )
+           7341733      instructions              #    0.34  insn per cycle           ( +-  0.17% )
+            595134      branches                  #   50.377 M/sec                    ( +-  0.58% )
+             57207      branch-misses             #    9.61% of all branches          ( +-  0.44% )
+
+           0.05389 +- 0.00524 seconds time elapsed  ( +-  9.73% )
+
+
+ Performance counter stats for './bin/main_sort_bench 10000 q 46' (30 runs):
+
+             13.33 msec task-clock                #    0.243 CPUs utilized            ( +-  0.35% )
+                 5      context-switches          #    0.370 K/sec                    ( +-  7.89% )
+                 0      cpu-migrations            #    0.005 K/sec                    ( +- 69.48% )
+                64      page-faults               #    0.005 M/sec                    ( +-  0.34% )
+          24637876      cycles                    #    1.849 GHz                      ( +-  0.35% )
+          16086540      instructions              #    0.65  insn per cycle           ( +-  0.10% )
+           1012747      branches                  #   75.997 M/sec                    ( +-  0.54% )
+             90376      branch-misses             #    8.92% of all branches          ( +-  0.18% )
+
+           0.05489 +- 0.00420 seconds time elapsed  ( +-  7.66% )
+
+
+ Performance counter stats for './bin/main_sort_bench 10000 m 46' (30 runs):
+
+             23.45 msec task-clock                #    0.259 CPUs utilized            ( +-  0.34% )
+                 8      context-switches          #    0.321 K/sec                    ( +-  9.63% )
+                 0      cpu-migrations            #    0.010 K/sec                    ( +- 33.66% )
+                66      page-faults               #    0.003 M/sec                    ( +-  0.48% )
+          43348248      cycles                    #    1.849 GHz                      ( +-  0.34% )
+          14565840      instructions              #    0.34  insn per cycle           ( +-  0.15% )
+           1136176      branches                  #   48.456 M/sec                    ( +-  0.46% )
+            103529      branch-misses             #    9.11% of all branches          ( +-  0.40% )
+
+           0.09044 +- 0.00736 seconds time elapsed  ( +-  8.14% )
+
+
+ Performance counter stats for './bin/main_sort_bench 50000 q 47' (30 runs):
+
+             62.46 msec task-clock                #    0.300 CPUs utilized            ( +-  0.26% )
+                14      context-switches          #    0.223 K/sec                    ( +- 13.75% )
+                 0      cpu-migrations            #    0.006 K/sec                    ( +- 28.37% )
+               142      page-faults               #    0.002 M/sec                    ( +-  0.23% )
+         115454262      cycles                    #    1.849 GHz                      ( +-  0.27% )
+          83944106      instructions              #    0.73  insn per cycle           ( +-  0.04% )
+           5036402      branches                  #   80.639 M/sec                    ( +-  0.10% )
+            450908      branch-misses             #    8.95% of all branches          ( +-  0.17% )
+
+            0.2082 +- 0.0129 seconds time elapsed  ( +-  6.22% )
+
+
+ Performance counter stats for './bin/main_sort_bench 50000 m 47' (30 runs):
+
+            128.27 msec task-clock                #    0.332 CPUs utilized            ( +-  0.23% )
+                32      context-switches          #    0.251 K/sec                    ( +- 30.75% )
+                 0      cpu-migrations            #    0.004 K/sec                    ( +- 26.70% )
+               143      page-faults               #    0.001 M/sec                    ( +-  0.17% )
+         237135414      cycles                    #    1.849 GHz                      ( +-  0.23% )
+          79243064      instructions              #    0.33  insn per cycle           ( +-  0.19% )
+           5901046      branches                  #   46.003 M/sec                    ( +-  0.24% )
+            498505      branch-misses             #    8.45% of all branches          ( +-  0.36% )
+
+            0.3864 +- 0.0244 seconds time elapsed  ( +-  6.31% )
+
+
+ Performance counter stats for './bin/main_sort_bench 100000 q 48' (30 runs):
+
+            126.39 msec task-clock                #    0.327 CPUs utilized            ( +-  0.39% )
+                81      context-switches          #    0.644 K/sec                    ( +- 36.27% )
+                 0      cpu-migrations            #    0.004 K/sec                    ( +- 22.35% )
+               240      page-faults               #    0.002 M/sec                    ( +-  0.10% )
+         233773745      cycles                    #    1.850 GHz                      ( +-  0.42% )
+         174255422      instructions              #    0.75  insn per cycle           ( +-  0.26% )
+          10422307      branches                  #   82.460 M/sec                    ( +-  0.42% )
+            936812      branch-misses             #    8.99% of all branches          ( +-  0.19% )
+
+            0.3867 +- 0.0234 seconds time elapsed  ( +-  6.04% )
+
+
+ Performance counter stats for './bin/main_sort_bench 100000 m 48' (30 runs):
+
+            285.65 msec task-clock                #    0.367 CPUs utilized            ( +-  1.12% )
+               302      context-switches          #    0.001 M/sec                    ( +- 45.45% )
+                 1      cpu-migrations            #    0.004 K/sec                    ( +- 22.44% )
+               241      page-faults               #    0.842 K/sec                    ( +-  0.10% )
+         508234613      cycles                    #    1.779 GHz                      ( +-  0.68% )
+         170420406      instructions              #    0.34  insn per cycle           ( +-  1.14% )
+          12653832      branches                  #   44.298 M/sec                    ( +-  1.44% )
+           1037021      branch-misses             #    8.20% of all branches          ( +-  0.46% )
+
+            0.7774 +- 0.0316 seconds time elapsed  ( +-  4.06% )
+
+
+ Performance counter stats for './bin/main_sort_bench 250000 q 49' (30 runs):
+
+            336.62 msec task-clock                #    0.384 CPUs utilized            ( +-  1.07% )
+               256      context-switches          #    0.760 K/sec                    ( +- 64.31% )
+                 1      cpu-migrations            #    0.003 K/sec                    ( +- 22.89% )
+               534      page-faults               #    0.002 M/sec                    ( +-  0.06% )
+         593904452      cycles                    #    1.764 GHz                      ( +-  0.63% )
+         455862774      instructions              #    0.77  insn per cycle           ( +-  0.47% )
+          27219261      branches                  #   80.860 M/sec                    ( +-  0.73% )
+           2490490      branch-misses             #    9.15% of all branches          ( +-  0.20% )
+
+            0.8772 +- 0.0324 seconds time elapsed  ( +-  3.69% )
+
+
+ Performance counter stats for './bin/main_sort_bench 500000 q 50' (30 runs):
+
+            709.43 msec task-clock                #    0.454 CPUs utilized            ( +-  0.88% )
+               539      context-switches          #    0.760 K/sec                    ( +- 30.09% )
+                 2      cpu-migrations            #    0.003 K/sec                    ( +- 12.46% )
+              1022      page-faults               #    0.001 M/sec                    ( +-  0.02% )
+        1215885467      cycles                    #    1.714 GHz                      ( +-  0.38% )
+         945674695      instructions              #    0.78  insn per cycle           ( +-  0.26% )
+          56473450      branches                  #   79.605 M/sec                    ( +-  0.41% )
+           5210513      branch-misses             #    9.23% of all branches          ( +-  0.11% )
+
+            1.5610 +- 0.0537 seconds time elapsed  ( +-  3.44% )
+
+
+ Performance counter stats for './bin/main_sort_bench 250000 m 49' (30 runs):
+
+            797.47 msec task-clock                #    0.474 CPUs utilized            ( +-  0.85% )
+               316      context-switches          #    0.397 K/sec                    ( +- 23.16% )
+                 2      cpu-migrations            #    0.003 K/sec                    ( +- 15.54% )
+               535      page-faults               #    0.671 K/sec                    ( +-  0.05% )
+        1358617025      cycles                    #    1.704 GHz                      ( +-  0.39% )
+         449235118      instructions              #    0.33  insn per cycle           ( +-  0.36% )
+          33003358      branches                  #   41.385 M/sec                    ( +-  0.46% )
+           2724316      branch-misses             #    8.25% of all branches          ( +-  0.25% )
+
+            1.6831 +- 0.0726 seconds time elapsed  ( +-  4.31% )
+
+
+ Performance counter stats for './bin/main_sort_bench 750000 q 51' (30 runs):
+
+           1088.89 msec task-clock                #    0.539 CPUs utilized            ( +-  0.76% )
+               549      context-switches          #    0.504 K/sec                    ( +- 47.21% )
+                 3      cpu-migrations            #    0.003 K/sec                    ( +-  9.63% )
+              1510      page-faults               #    0.001 M/sec                    ( +-  0.02% )
+        1839034241      cycles                    #    1.689 GHz                      ( +-  0.37% )
+        1447726544      instructions              #    0.79  insn per cycle           ( +-  0.26% )
+          86350891      branches                  #   79.302 M/sec                    ( +-  0.40% )
+           7974160      branch-misses             #    9.23% of all branches          ( +-  0.11% )
+
+            2.0195 +- 0.0996 seconds time elapsed  ( +-  4.93% )
+
+
+ Performance counter stats for './bin/main_sort_bench 1000000 q 52' (30 runs):
+
+           1478.80 msec task-clock                #    0.613 CPUs utilized            ( +-  0.70% )
+               879      context-switches          #    0.594 K/sec                    ( +- 42.29% )
+                 4      cpu-migrations            #    0.003 K/sec                    ( +- 16.26% )
+              1998      page-faults               #    0.001 M/sec                    ( +-  0.01% )
+        2477360151      cycles                    #    1.675 GHz                      ( +-  0.41% )
+        1956634430      instructions              #    0.79  insn per cycle           ( +-  0.26% )
+         116800999      branches                  #   78.984 M/sec                    ( +-  0.41% )
+          10872339      branch-misses             #    9.31% of all branches          ( +-  0.12% )
+
+             2.413 +- 0.157 seconds time elapsed  ( +-  6.50% )
+
+
+ Performance counter stats for './bin/main_sort_bench 500000 m 50' (30 runs):
+
+           1716.38 msec task-clock                #    0.639 CPUs utilized            ( +-  0.75% )
+               962      context-switches          #    0.560 K/sec                    ( +- 31.47% )
+                 3      cpu-migrations            #    0.002 K/sec                    ( +- 18.66% )
+              1023      page-faults               #    0.596 K/sec                    ( +-  0.03% )
+        2870282813      cycles                    #    1.672 GHz                      ( +-  0.36% )
+         946719847      instructions              #    0.33  insn per cycle           ( +-  0.48% )
+          69270701      branches                  #   40.359 M/sec                    ( +-  0.62% )
+           5650348      branch-misses             #    8.16% of all branches          ( +-  0.26% )
+
+             2.685 +- 0.178 seconds time elapsed  ( +-  6.61% )
+
+
+ Performance counter stats for './bin/main_sort_bench 750000 m 51' (30 runs):
+
+           2625.29 msec task-clock                #    0.724 CPUs utilized            ( +-  0.56% )
+               885      context-switches          #    0.337 K/sec                    ( +- 41.21% )
+                 3      cpu-migrations            #    0.001 K/sec                    ( +- 23.44% )
+              1511      page-faults               #    0.575 K/sec                    ( +-  0.02% )
+        4414793491      cycles                    #    1.682 GHz                      ( +-  0.26% )
+        1450114027      instructions              #    0.33  insn per cycle           ( +-  0.34% )
+         105375707      branches                  #   40.139 M/sec                    ( +-  0.44% )
+           8498286      branch-misses             #    8.06% of all branches          ( +-  0.21% )
+
+             3.625 +- 0.282 seconds time elapsed  ( +-  7.77% )
+
+
+ Performance counter stats for './bin/main_sort_bench 1000000 m 52' (30 runs):
+
+           3496.06 msec task-clock                #    0.781 CPUs utilized            ( +-  0.75% )
+               352      context-switches          #    0.101 K/sec                    ( +- 19.63% )
+                 3      cpu-migrations            #    0.001 K/sec                    ( +- 27.76% )
+              1999      page-faults               #    0.572 K/sec                    ( +-  0.01% )
+        6017679994      cycles                    #    1.721 GHz                      ( +-  0.20% )
+        1958664774      instructions              #    0.33  insn per cycle           ( +-  0.07% )
+         142087951      branches                  #   40.642 M/sec                    ( +-  0.09% )
+          11656253      branch-misses             #    8.20% of all branches          ( +-  0.16% )
+
+             4.476 +- 0.335 seconds time elapsed  ( +-  7.48% )
